@@ -83,6 +83,7 @@ class Info extends StatelessWidget {
           ),
           Container(
             width: MediaQuery.of(context).size.width * 0.9,
+            height: MediaQuery.of(context).size.height * 0.4,
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.only(left: 50, right: 50, top: 100),
             decoration: BoxDecoration(
@@ -93,20 +94,16 @@ class Info extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Tile(
-                  img: 'assets/profile/sapna.jpeg',
-                  name: 'Sapna Fulwani',
+                  img: 'assets/profile/Priyanka.jpeg',
+                  name: 'Priyanka Pareek',
                 ),
                 Tile(
-                  img: 'assets/profile/shilpii.jpg',
-                  name: 'Shilpi Kumari',
+                  img: 'assets/profile/Pranjali.jpeg',
+                  name: 'Pranjali Singh',
                 ),
                 Tile(
-                  img: 'assets/profile/shubhalli.jpg',
-                  name: 'Shubhali Kashyap',
-                ),
-                Tile(
-                  img: 'assets/profile/shruti.jpg',
-                  name: 'S Sai Sruthi',
+                  img: 'assets/profile/Jaya.jpeg',
+                  name: 'Jaya Sisodiya',
                 ),
               ],
             ),
@@ -128,14 +125,14 @@ class Tile extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 5.0),
       child: ListTile(
         leading: CircleAvatar(
-          radius: 25,
+          radius: 30,
           backgroundImage: AssetImage(img),
         ),
         title: Text(
           name,
           style: TextStyle(
             fontFamily: "Montserrat",
-            color: Colors.black54,
+            color: Colors.black,
           ),
         ),
       ),
